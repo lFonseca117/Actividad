@@ -58,4 +58,57 @@ git switch -c nombre-rama        # Crear y cambiar de rama                      
 git help                         # Ayuda general
 git help <comando>               # Ayuda de un comando
 ```
+<!-- Laura -->
+## 🔹 Guardar y recuperar trabajo temporal (Stash)
+```bash
+git stash                # Guardar cambios en memoria temporal
+git stash list           # Ver lista de stashes guardados
+git stash pop            # Recuperar el último stash y aplicarlo
+git stash drop           # Eliminar stash sin aplicarlo
+``` 
+
+## 🔹 Historial y revisión
+```bash
+git log                  # Ver historial de commits
+git log --oneline        # Ver historial resumido
+git show <id-commit>     # Ver detalles de un commit específico
+``` 
+
+## 🔹 Revertir y resetear cambios
+```bash
+git checkout -- archivo.txt      # Descartar cambios en un archivo
+git reset archivo.txt            # Quitar archivo del stage
+git reset --soft HEAD~1          # Eliminar el último commit (manteniendo cambios)
+git reset --hard HEAD~1          # Eliminar commit y cambios
+git revert <id-commit>           # Crear un commit que deshace otro
+``` 
+
+## 🔹 Resumen de comandos básicos
+Estos son los más usados en el día a día:
+
+```bash
+bash
+git status                   # Ver estado del repositorio
+git add <archivo>            # Añadir un archivo al área de preparación (staging)
+git commit -m "mensaje"      # Crear un commit con mensaje
+git push                     # Subir cambios al repositorio remoto
+git pull  
+```
+
+## 🔹 Buenas prácticas recomendadas
+Commits pequeños y frecuentes: evita subir muchos cambios en un solo commit.
+
+Ejemplo:
+
+feat: agrega sección de ramas
+
+fix: corrige error en configuración de usuario
+
+docs: actualiza el README con comandos básicos
+```bash
+
+Actualizar tu rama antes de subir cambios:       # git pull origin main
+``` 
+
+
 
